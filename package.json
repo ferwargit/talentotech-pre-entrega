@@ -1,0 +1,12 @@
+{
+  "name": "talentotech-pre-entrega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Fernando Warno",
+  "license": "MIT",
+  "type": "module"
+}
