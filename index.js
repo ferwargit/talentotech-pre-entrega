@@ -33,3 +33,15 @@ if (method.toUpperCase() == "POST" && resource.toLowerCase() == "products") {
   const data = await response.json();
   console.log(data);
 }
+
+if (
+  method.toUpperCase() == "DELETE" &&
+  resource.toLowerCase().startsWith("products/")
+) {
+  const id = resource.split("/")[1];
+  const response = await fetch(`https://fakestoreapi.com/products/${id}`, {
+    method: "DELETE",
+  });
+  const data = await response.json();
+  console.log(data);
+}
